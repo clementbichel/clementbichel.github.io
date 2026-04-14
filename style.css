@@ -394,6 +394,20 @@ nav a:hover {
   white-space: nowrap;
 }
 
+.formations-category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  margin-top: var(--space-md);
+  margin-bottom: 0.25rem;
+}
+
+.formations-category:first-of-type {
+  margin-top: 0;
+}
+
 /* ── Compétences & outils ────────────────────────────── */
 .skills-block {
   display: flex;
