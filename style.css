@@ -89,8 +89,29 @@ nav {
   margin: 0 auto;
   padding: var(--space-sm);
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: var(--space-md);
-  justify-content: flex-end;
+}
+
+.nav-brand {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  flex-shrink: 0;
+}
+
+.nav-brand:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-md);
 }
 
 nav a {
