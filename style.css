@@ -214,6 +214,27 @@ nav a:hover {
   font-size: 0.9rem;
 }
 
+/* ── CTA Button ─────────────────────────────────────── */
+.cta-btn {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-accent);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.cta-btn:hover {
+  background-color: color-mix(in srgb, var(--color-accent) 85%, #000);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
 /* ── Projets ────────────────────────────────────────── */
 #projects h2,
 #contact h2 {
