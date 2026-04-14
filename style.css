@@ -1,0 +1,228 @@
+/* ── Variables ──────────────────────────────────────── */
+:root {
+  --color-bg:       #ffffff;
+  --color-surface:  #f5f5f5;
+  --color-text:     #1a1a1a;
+  --color-muted:    #666666;
+  --color-accent:   #2563eb;
+  --color-border:   #e5e5e5;
+
+  --font-sans: system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, monospace;
+
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  2rem;
+  --space-lg:  4rem;
+  --space-xl:  8rem;
+
+  --radius: 8px;
+  --max-width: 860px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:      #0f0f0f;
+    --color-surface: #1a1a1a;
+    --color-text:    #f0f0f0;
+    --color-muted:   #999999;
+    --color-accent:  #60a5fa;
+    --color-border:  #2a2a2a;
+  }
+}
+
+/* ── Reset ──────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ── Layout ─────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-sm);
+}
+
+section {
+  padding: var(--space-lg) 0;
+}
+
+/* ── Header / Nav ───────────────────────────────────── */
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 10;
+}
+
+nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-sm);
+  display: flex;
+  gap: var(--space-md);
+  justify-content: flex-end;
+}
+
+nav a {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+nav a:hover {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+/* ── Hero ───────────────────────────────────────────── */
+#hero {
+  padding: var(--space-xl) 0 var(--space-lg);
+}
+
+#hero h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-xs);
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: var(--color-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.bio {
+  max-width: 560px;
+  color: var(--color-muted);
+  margin-bottom: var(--space-md);
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.social-links a {
+  font-size: 0.9rem;
+}
+
+/* ── Projets ────────────────────────────────────────── */
+#projects h2,
+#contact h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.projects-grid {
+  display: grid;
+  gap: var(--space-sm);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.project-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.project-card p {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+  color: var(--color-muted);
+}
+
+.project-link {
+  font-size: 0.85rem;
+  margin-top: var(--space-xs);
+}
+
+/* ── Contact ────────────────────────────────────────── */
+#contact {
+  border-top: 1px solid var(--color-border);
+}
+
+#contact p {
+  color: var(--color-muted);
+  margin-bottom: var(--space-md);
+}
+
+/* ── Footer ─────────────────────────────────────────── */
+footer {
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-md) 0;
+}
+
+footer p {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+/* ── Animation scroll (reveal) ──────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
