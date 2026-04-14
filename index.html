@@ -12,6 +12,10 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://clementbichel.fr/assets/images/photo.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Coach agile &amp; produit à Bordeaux — Clément Bichel" />
+  <meta name="twitter:description" content="Coach agile et coach produit freelance à Bordeaux. +15 ans d'expérience : SAFe, Scrum, coaching PM/PO, transformation agile. Première consultation offerte." />
+  <meta name="twitter:image" content="https://clementbichel.fr/assets/images/photo.jpg" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -36,6 +40,8 @@
       "@type": "ProfessionalService",
       "name": "Clément Bichel — Coach agile & produit",
       "url": "https://clementbichel.fr/",
+      "image": "https://clementbichel.fr/assets/images/photo.jpg",
+      "description": "Coach agile et coach produit freelance à Bordeaux avec +15 ans d'expérience. Spécialisé en SAFe, Scrum, coaching PM/PO et transformation agile.",
       "telephone": "+33616412907",
       "address": {
         "@type": "PostalAddress",
@@ -50,6 +56,31 @@
         "Scrum",
         "Kanban",
         "Management 3.0"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "25"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Florian Guingal"},
+          "reviewBody": "Clément a été un partenaire particulièrement précieux. Il a fait émerger des visions ambitieuses sur des sujets complexes, structuré les périmètres via des vision boards, et transformé ces intentions en résultats tangibles : OKR pertinents et appropriation progressive du mode produit. Je recommande Clément sans hésitation.",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5"}
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Nicolas Cloupeau"},
+          "reviewBody": "Sa combinaison rare de discrétion, d'humilité et de franchise : il dit les choses sans détour, sans écraser les autres. Porteur de convictions, mais toujours pragmatique. Résultats : 5 collectifs accompagnés avec des notes de satisfaction supérieures à 4,5/5. Je recommande Clément sans réserve.",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5"}
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Benoit VINCENT"},
+          "reviewBody": "Clément a rapidement démontré sa valeur en nous accompagnant efficacement dans notre démarche agile. Son intervention a permis aux équipes de gagner en sérénité et en qualité de travail, tout en renforçant la création de valeur.",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5"}
+        }
       ]
     }
   ]
@@ -60,13 +91,15 @@
 <body>
 
   <header>
-    <nav>
+    <nav aria-label="Navigation principale">
       <a href="#missions">Missions</a>
       <a href="#testimonials">Témoignages</a>
       <a href="#formations">Formations</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
+
+  <main>
 
   <!-- ── HERO ───────────────────────────────────────── -->
   <section id="hero">
@@ -81,7 +114,7 @@
             <p>Je travaille particulièrement autour de la motivation et sur les bases du management : styles de management, objectifs, délégation, feedbacks. Fort d'une solide expertise en développement logiciel, je suis particulièrement à l'aise avec les équipes des DSI et des services informatiques.</p>
           </div>
           <ul class="certs">
-            <span>Certifications :</span>
+            <li class="certs-label">Certifications :</li>
             <li>Lead Product — Thiga (2025)</li>
             <li>ICAgile Systems Coaching (2024)</li>
             <li>SAFe® 6 Practice Consultant (2023)</li>
@@ -95,7 +128,7 @@
         </div>
         <!-- Remplace assets/images/photo.jpg par ta photo -->
         <div class="hero-photo">
-          <img src="assets/images/photo.jpg" alt="Clément Bichel" />
+          <img src="assets/images/photo.jpg" alt="Clément Bichel" width="200" height="200" fetchpriority="high" />
         </div>
       </div>
     </div>
@@ -511,6 +544,8 @@
       </ul>
     </div>
   </section>
+
+  </main>
 
   <footer>
     <div class="container">

@@ -271,10 +271,11 @@ nav a:hover {
   margin-bottom: var(--space-md);
 }
 
-.certs span {
+.certs .certs-label {
   font-size: 0.75rem;
   color: var(--color-muted);
   margin-right: 0.2rem;
+  list-style: none;
 }
 
 .certs li {
