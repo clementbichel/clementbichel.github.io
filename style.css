@@ -329,6 +329,30 @@ nav a:hover {
   white-space: nowrap;
 }
 
+/* ── Compétences & outils ────────────────────────────── */
+.skills-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.skills-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skills-group h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* ── Contact ────────────────────────────────────────── */
 #contact {
   border-top: 1px solid var(--color-border);
