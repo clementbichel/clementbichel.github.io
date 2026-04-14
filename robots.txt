@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clementbichel.fr/sitemap.xml
