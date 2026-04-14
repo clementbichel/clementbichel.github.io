@@ -201,8 +201,15 @@ nav a:hover {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.4rem;
   margin-bottom: var(--space-md);
+}
+
+.certs span {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  margin-right: 0.2rem;
 }
 
 .certs li {
@@ -213,6 +220,22 @@ nav a:hover {
   border-radius: 4px;
   padding: 0.2rem 0.6rem;
   color: var(--color-muted);
+}
+
+/* ── Section intro ───────────────────────────────────── */
+.section-intro {
+  color: var(--color-muted);
+  margin-bottom: var(--space-md);
+  max-width: 640px;
+}
+
+/* ── Bio multi-paragraphes ───────────────────────────── */
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 620px;
+  margin-bottom: var(--space-md);
 }
 
 /* ── Témoignages ─────────────────────────────────────── */
@@ -237,6 +260,12 @@ nav a:hover {
   }
 }
 
+@media (min-width: 900px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .testimonial {
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -249,16 +278,55 @@ nav a:hover {
 
 .testimonial p {
   color: var(--color-text);
-  font-size: 0.95rem;
+  font-size: 0.875rem;
   line-height: 1.6;
   flex: 1;
   font-style: italic;
 }
 
 .testimonial cite {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--color-muted);
   font-style: normal;
+}
+
+/* ── Formations ──────────────────────────────────────── */
+#formations {
+  border-top: 1px solid var(--color-border);
+}
+
+#formations h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.formations-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.formations-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-sm);
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-border);
+  flex-wrap: wrap;
+}
+
+.formation-title {
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.formation-org {
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  color: var(--color-muted);
+  white-space: nowrap;
 }
 
 /* ── Contact ────────────────────────────────────────── */
