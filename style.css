@@ -121,6 +121,9 @@ nav {
     gap: 0.5rem;
     padding: 0.75rem var(--space-sm);
   }
+  .nav-brand {
+    flex: 1 1 100%;
+  }
   .nav-links {
     gap: 0.75rem;
   }
