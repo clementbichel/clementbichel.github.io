@@ -48,6 +48,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -112,6 +113,20 @@ nav {
 .nav-links {
   display: flex;
   gap: var(--space-md);
+}
+
+@media (max-width: 540px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.75rem var(--space-sm);
+  }
+  .nav-links {
+    gap: 0.75rem;
+  }
+  nav a {
+    font-size: 0.8rem;
+  }
 }
 
 nav a {
@@ -519,6 +534,12 @@ nav a:hover {
   font-family: var(--font-mono);
   color: var(--color-muted);
   white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .formation-org {
+    white-space: normal;
+  }
 }
 
 .formations-category {
