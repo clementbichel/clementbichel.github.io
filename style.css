@@ -336,6 +336,90 @@ nav a:hover {
   flex: 0 !important;
 }
 
+/* ── Sous-rôles dans une carte mission ───────────────── */
+.mission-subroles {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  flex: 1;
+}
+
+.mission-subrole {
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+.mission-subrole:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.mission-subrole-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.15rem;
+}
+
+.mission-subrole-period {
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  margin-bottom: 0.4rem;
+}
+
+.mission-subrole ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.mission-subrole ul li {
+  font-size: 0.83rem;
+  color: var(--color-muted);
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.4;
+}
+
+.mission-subrole ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  top: 0.15em;
+}
+
+/* ── Bullets de mission ──────────────────────────────── */
+.mission-bullets {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.mission-bullets li {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.4;
+}
+
+.mission-bullets li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  top: 0.15em;
+}
+
 /* ── Certifications (hero) ───────────────────────────── */
 .certs {
   list-style: none;
