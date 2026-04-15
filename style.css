@@ -151,13 +151,13 @@ nav a:hover {
 
 .hero-content {
   display: flex;
-  gap: var(--space-lg);
-  align-items: flex-start;
+  flex-direction: column-reverse;
+  gap: var(--space-md);
+  align-items: center;
 }
 
 .hero-text {
-  flex: 1;
-  min-width: 0;
+  align-self: stretch;
 }
 
 /* ── Photo de profil ─────────────────────────────────── */
@@ -192,11 +192,6 @@ nav a:hover {
 }
 
 @media (max-width: 640px) {
-  .hero-content {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
   .hero-photo {
     width: 140px;
     height: 140px;
@@ -451,7 +446,6 @@ nav a:hover {
 .section-intro {
   color: var(--color-muted);
   margin-bottom: var(--space-md);
-  max-width: 640px;
 }
 
 /* ── Bio multi-paragraphes ───────────────────────────── */
