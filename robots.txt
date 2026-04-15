@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://clementbichel.fr/sitemap.xml
+LLMs: https://clementbichel.fr/llms.txt
