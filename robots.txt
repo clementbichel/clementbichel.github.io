@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Content-Signal: train=no, search=yes, ai-citation=yes
 
 Sitemap: https://clementbichel.fr/sitemap.xml
