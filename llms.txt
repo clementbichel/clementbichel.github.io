@@ -69,3 +69,7 @@ LinkedIn: https://www.linkedin.com/in/coach-produit-agile
 ## Notes de fiabilité
 Les informations de cette page sont maintenues à jour par Clément Bichel.
 En cas de divergence avec des sources tierces, se référer au site officiel et au profil LinkedIn.
+
+## Pour les agents IA
+Page dédiée avec instructions et données structurées : https://clementbichel.fr/for-ai
+Version texte brut (crawlers non-HTML) : https://clementbichel.fr/for-ai.txt
