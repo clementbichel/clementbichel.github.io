@@ -924,3 +924,22 @@ footer p {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* === Badge disponibilité (hero) === */
+.availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 0.4rem;
+  font-weight: 600;
+  color: var(--color-text, inherit);
+}
+
+.availability-dot {
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  background: #22c55e;
+  display: inline-block;
+  flex-shrink: 0;
+}
