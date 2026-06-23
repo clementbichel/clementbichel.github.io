@@ -1,3 +1,10 @@
 .DS_Store
 Thumbs.db
 *.log
+
+# Fichiers de travail hors site (CV, exports, archives)
+/CV-clement-bichel.*
+/CV-clement-bichelToHtml/
+/ProfileLI.pdf
+/Coach Agile freelance * on Strikingly.html
+/Coach Agile freelance * on Strikingly_files/
