@@ -1,0 +1,5 @@
+# GitHub Pages (Jekyll) — exclut les fichiers non-site du déploiement.
+# ponytail: dépend de Jekyll actif (pas de .nojekyll). Si un .nojekyll
+# apparaît, cet exclude est ignoré et docs/ refuit en prod.
+exclude:
+  - docs
