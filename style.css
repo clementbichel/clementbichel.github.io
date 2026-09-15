@@ -764,13 +764,13 @@ nav a:hover {
   margin-top: var(--space-lg);
 }
 
-.ask-ai svg {
+.btn-list svg {
   width: 1.1em;
   height: 1.1em;
   flex-shrink: 0;
 }
 
-.ask-ai a {
+.btn-list a {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -784,11 +784,22 @@ nav a:hover {
   transition: border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
 }
 
-.ask-ai a:hover {
+.btn-list a:hover {
   border-color: var(--color-accent);
   color: var(--color-accent);
   transform: translateY(-1px);
   text-decoration: none;
+}
+
+.btn-list .btn-primary,
+.btn-list .btn-primary:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+
+.btn-list .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--color-accent) 85%, #000);
 }
 
 #contact strong {
