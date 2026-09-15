@@ -760,6 +760,10 @@ nav a:hover {
   margin-bottom: var(--space-md);
 }
 
+#contact .ask-ai-intro {
+  margin-top: var(--space-lg);
+}
+
 #contact strong {
   color: var(--color-text);
 }
