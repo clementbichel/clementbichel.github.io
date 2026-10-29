@@ -146,7 +146,6 @@ nav a:hover {
 /* ── Hero ───────────────────────────────────────────── */
 #hero {
   padding: var(--space-xl) 0 var(--space-lg);
-  background: radial-gradient(ellipse 80% 60% at 70% 40%, color-mix(in srgb, var(--color-accent) 8%, transparent), transparent);
 }
 
 .hero-content {
@@ -205,12 +204,6 @@ nav a:hover {
   margin-bottom: var(--space-xs);
 }
 
-.tagline {
-  font-size: 1.2rem;
-  color: var(--color-muted);
-  margin-bottom: var(--space-sm);
-}
-
 .bio {
   max-width: 560px;
   color: var(--color-muted);
@@ -266,15 +259,6 @@ nav a:hover {
   color: var(--color-muted);
   font-size: 0.9rem;
   flex: 1;
-}
-
-.project-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px color-mix(in srgb, var(--color-accent) 15%, transparent);
 }
 
 .tags {
@@ -394,33 +378,6 @@ nav a:hover {
   top: 0.15em;
 }
 
-/* ── Certifications (hero) ───────────────────────────── */
-.certs {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem;
-  margin-bottom: var(--space-md);
-}
-
-.certs .certs-label {
-  font-size: 0.75rem;
-  color: var(--color-muted);
-  margin-right: 0.2rem;
-  list-style: none;
-}
-
-.certs li {
-  font-size: 0.75rem;
-  font-family: var(--font-mono);
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 4px;
-  padding: 0.2rem 0.6rem;
-  color: var(--color-muted);
-}
-
 /* ── Section intro ───────────────────────────────────── */
 .section-intro {
   color: var(--color-muted);
@@ -466,64 +423,6 @@ nav a:hover {
   gap: 0.75rem;
 }
 
-/* ── Hero method (3 étapes) ──────────────────────────── */
-.hero-method {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem var(--space-sm);
-  margin-bottom: var(--space-md);
-  padding: var(--space-sm) var(--space-md);
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-}
-
-.hero-method-step {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-}
-
-.hero-method-step strong {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color-text);
-}
-
-.hero-method-step span {
-  font-size: 0.78rem;
-  color: var(--color-muted);
-}
-
-.hero-method-sep {
-  color: var(--color-accent);
-  font-weight: 700;
-  font-size: 1.1rem;
-  align-self: center;
-}
-
-@media (max-width: 540px) {
-  .hero-method {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .hero-method-sep {
-    display: none;
-  }
-}
-
-/* ── Hero audience ───────────────────────────────────── */
-.hero-audience {
-  margin-bottom: var(--space-md);
-}
-
-.hero-audience-label {
-  font-size: 0.78rem;
-  color: var(--color-muted);
-  margin-bottom: 0.4rem;
-}
-
 /* ── Témoignages ─────────────────────────────────────── */
 #testimonials {
   border-top: 1px solid var(--color-border);
@@ -567,7 +466,6 @@ nav a:hover {
   font-size: 0.875rem;
   line-height: 1.6;
   flex: 1;
-  font-style: italic;
 }
 
 .testimonial cite {
@@ -576,34 +474,11 @@ nav a:hover {
   font-style: normal;
 }
 
-.testimonial {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.testimonial:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px color-mix(in srgb, var(--color-accent) 12%, transparent);
-}
-
 /* ── Témoignages featured ────────────────────────────── */
 .testimonial.featured {
   border-color: color-mix(in srgb, var(--color-accent) 30%, var(--color-border));
   position: relative;
   overflow: hidden;
-}
-
-.testimonial.featured::before {
-  content: '\201C';
-  font-family: var(--font-display);
-  font-size: 8rem;
-  line-height: 1;
-  color: var(--color-accent);
-  opacity: 0.08;
-  position: absolute;
-  top: -1rem;
-  left: 0.5rem;
-  pointer-events: none;
-  user-select: none;
 }
 
 /* ── Details/Summary témoignages ─────────────────────── */
@@ -694,8 +569,6 @@ nav a:hover {
 .formations-category {
   font-size: 0.75rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
   color: var(--color-muted);
   margin-top: var(--space-md);
   margin-bottom: 0.25rem;
@@ -725,8 +598,6 @@ nav a:hover {
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--color-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 /* ── Contact ────────────────────────────────────────── */
@@ -760,13 +631,12 @@ nav a:hover {
   color: var(--color-text);
   font-weight: 500;
   text-decoration: none;
-  transition: border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .btn-list a:hover {
   border-color: var(--color-accent);
   color: var(--color-accent);
-  transform: translateY(-1px);
   text-decoration: none;
 }
 
@@ -932,18 +802,6 @@ footer p {
   color: var(--color-muted);
   margin-top: 0.4rem;
   font-style: italic;
-}
-
-/* ── Animation scroll (reveal) ──────────────────────── */
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* === Badge disponibilité (hero) === */
